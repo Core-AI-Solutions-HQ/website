@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0a1628;
+  --teal: #0abfbc;
+  --blue: #1a4fa0;
+  --paper: #f7f9fc;
+  --ink: #0a1628;
+  --slate-brand: #5b6b85;
+  --border: #e6ebf2;
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-teal: var(--teal);
+  --color-blue: var(--blue);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-slate-brand: var(--slate-brand);
+  --color-border: var(--border);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans:
+    "Segoe UI Variable", "Segoe UI", Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    "Cascadia Mono", "SFMono-Regular", "IBM Plex Mono", ui-monospace, Menlo,
+    Consolas, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--teal) 28%, transparent);
+  color: var(--ink);
+}
+
+.font-mono-brand {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.card-elevated {
+  box-shadow:
+    0 1px 1px rgb(10 22 40 / 0.04),
+    0 8px 24px rgb(10 22 40 / 0.05);
+}
+
+.card-elevated-hover {
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.card-elevated-hover:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 2px 4px rgb(10 22 40 / 0.05),
+    0 16px 36px rgb(10 22 40 / 0.08);
+}
+
+.circuit-line {
+  background: linear-gradient(90deg, #1a4fa0, #0abfbc, #1a4fa0);
+  opacity: 0.55;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes line-draw {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes packet-flow {
+  from {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  to {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes node-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes node-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes system-label-fade-up {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -140%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -180%);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 280ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal],
+  .animate-fade-in,
+  .card-elevated-hover {
+    transition: none;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
