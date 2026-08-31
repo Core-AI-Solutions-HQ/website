@@ -1,7 +1,20 @@
 import type { Metadata, Viewport } from "next";
+import { Bricolage_Grotesque, Geist } from "next/font/google";
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist",
+  display: "swap",
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-bricolage",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -69,7 +82,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`${geist.variable} ${bricolage.variable} h-full antialiased`}>
       <body className="min-h-full bg-paper font-sans text-ink">
         <JsonLd />
         {children}
