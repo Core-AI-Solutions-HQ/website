@@ -1,10 +1,15 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 export const alt = "Core AI Solutions — Technology that works. Intelligence that delivers.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+export default async function OpenGraphImage() {
+  const logo = await readFile(join(process.cwd(), "public/logo.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -14,37 +19,13 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#0A1628",
-          padding: "72px",
+          background: "#000000",
+          padding: "64px",
           color: "white",
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-          <div
-            style={{
-              width: 72,
-              height: 72,
-              borderRadius: 16,
-              background: "#0A1628",
-              border: "1px solid #1A4FA0",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#0ABFBC",
-              fontSize: 36,
-              fontWeight: 800,
-            }}
-          >
-            C
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ fontSize: 22, fontWeight: 800, letterSpacing: 2 }}>CORE AI SOLUTIONS LTD</div>
-            <div style={{ fontSize: 16, color: "#0ABFBC", letterSpacing: 3, marginTop: 6 }}>
-              WE BUILD THE FUTURE
-            </div>
-          </div>
-        </div>
+        <img src={logoSrc} alt="Core AI Solutions Ltd" width={560} height={186} />
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 60, fontWeight: 800, lineHeight: 1.05, letterSpacing: -2 }}>
             Technology that works.

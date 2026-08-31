@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0A1628]/92 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-2.5">
         <a href="#top" className="shrink-0" aria-label="Core AI Solutions home">
           <Logo />
         </a>
