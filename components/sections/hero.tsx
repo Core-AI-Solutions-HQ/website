@@ -14,7 +14,7 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-16 px-6 pt-20 pb-16 lg:grid-cols-2 lg:items-center lg:pt-28 lg:pb-24">
         <div>
-          <div className="font-mono-brand mb-6 text-teal">Nigerian Technology · Production-Grade</div>
+          <div className="font-mono-brand mb-6 text-teal">Nigerian technology, built to last</div>
           <h1 className="text-5xl font-bold leading-[1.02] tracking-[-0.03em] text-white sm:text-6xl lg:text-7xl">
             Technology that works.
             <br />
@@ -22,7 +22,7 @@ export function Hero() {
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/85 sm:text-xl">
             Core AI Solutions designs, builds, and operates software and AI systems for businesses,
-            governments, and individuals — across mobile, web, API, and data infrastructure.
+            governments, and individuals across mobile, web, API, and data infrastructure.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a

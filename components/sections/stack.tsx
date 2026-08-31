@@ -10,7 +10,7 @@ export function Stack() {
         </Reveal>
         <Reveal delay={80}>
           <h2 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-            A modern, boring toolbox for un-boring problems.
+            A modern, boring toolbox for hard problems.
           </h2>
         </Reveal>
         <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">

@@ -2,9 +2,9 @@ export const siteConfig = {
   name: "Core AI Solutions",
   legalName: "CORE AI SOLUTIONS LTD",
   tagline: "we build the future",
-  title: "Core AI Solutions — Technology That Works. Intelligence That Delivers.",
+  title: "Core AI Solutions: Technology That Works. Intelligence That Delivers.",
   description:
-    "Lagos-based engineering house building production-grade software, AI, and payment infrastructure for businesses, governments, and citizens across Africa.",
+    "Engineering house in Lagos building software, AI, and payment infrastructure for businesses, governments, and citizens across Africa.",
   url: "https://coreaisolutions.tech",
   email: "coreaisolutionshq@gmail.com",
   phone: "+234 906 341 1093",
@@ -33,7 +33,7 @@ export const inquiryTypes = [
 ] as const;
 
 export const investorMailto =
-  "mailto:coreaisolutionshq@gmail.com?subject=Investor%20Enquiry%20%E2%80%94%20Core%20AI%20Solutions&body=Hi%20Core%20AI%20Solutions%20team%2C%0A%0AI%27d%20like%20to%20request%20your%20investor%20deck%20and%20learn%20more%20about%20the%20opportunity.%0A%0A%E2%80%94%20";
+  "mailto:coreaisolutionshq@gmail.com?subject=Investor%20Enquiry%3A%20Core%20AI%20Solutions&body=Hi%20Core%20AI%20Solutions%20team%2C%0A%0AI%27d%20like%20to%20request%20your%20investor%20deck%20and%20learn%20more%20about%20the%20opportunity.%0A%0A";
 
 export const teamBiosMailto =
   "mailto:coreaisolutionshq@gmail.com?subject=Team%20bios%20request";

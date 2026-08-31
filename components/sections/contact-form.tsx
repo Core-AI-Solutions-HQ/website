@@ -32,7 +32,7 @@ export function ContactForm() {
       .join("\n");
 
     const mailto = `mailto:${siteConfig.email}?subject=${encodeURIComponent(
-      `${intent} — ${name}`,
+      `${intent}: ${name}`,
     )}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailto;

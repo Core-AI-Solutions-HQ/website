@@ -1,6 +1,6 @@
 # Core AI Solutions
 
-Production website for Core AI Solutions — a Lagos-based engineering house building production-grade software, AI, and payment infrastructure.
+Production website for Core AI Solutions, an engineering house in Lagos building software, AI, and payment infrastructure.
 
 ## Stack
 

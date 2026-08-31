@@ -9,7 +9,7 @@ export function Footer() {
           <div className="max-w-md">
             <Logo />
             <p className="mt-5 text-sm leading-relaxed text-white/70">
-              Production-grade software and AI systems, engineered in Lagos.
+              Software and AI systems, engineered in Lagos.
             </p>
           </div>
           <nav aria-label="Footer" className="grid grid-cols-2 gap-x-12 gap-y-2 text-sm sm:grid-cols-3">

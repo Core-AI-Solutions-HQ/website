@@ -10,32 +10,32 @@ import { Reveal } from "@/components/site/reveal";
 
 const values = [
   {
-    title: "Engineering Rigour",
-    body: "Production-ready code, measurable quality.",
+    title: "Engineering rigour",
+    body: "Code that holds up in production, with quality you can measure.",
     icon: Cpu,
   },
   {
-    title: "Problem-First Thinking",
+    title: "Start with the problem",
     body: "The problem leads. The stack follows.",
     icon: Compass,
   },
   {
-    title: "Trust & Security",
-    body: "Auditable, compliant, defensible by design.",
+    title: "Trust and security",
+    body: "Auditable, compliant, and defensible by design.",
     icon: ShieldCheck,
   },
   {
-    title: "Africa-Rooted",
-    body: "Built for African infrastructure and regulation.",
+    title: "Built for Africa",
+    body: "Designed for African infrastructure and regulation.",
     icon: MapPin,
   },
   {
-    title: "Speed with Substance",
-    body: "Fast, but nothing shipped that can't run.",
+    title: "Speed with substance",
+    body: "Fast, but nothing ships that cannot run.",
     icon: Timer,
   },
   {
-    title: "Long-Term Partnership",
+    title: "We stay",
     body: "We stay in production with our clients.",
     icon: Handshake,
   },
@@ -50,9 +50,9 @@ export function VisionValues() {
             <div className="card-elevated card-elevated-hover h-full rounded-md border border-border bg-white p-10">
               <div className="font-mono-brand text-blue">Vision</div>
               <p className="mt-6 text-2xl font-semibold leading-snug text-ink">
-                To be Africa&apos;s most trusted engineering house for production-grade software and
-                AI — building the digital infrastructure that businesses, governments, and citizens
-                rely on every day.
+                To be Africa&apos;s most trusted engineering house for software and AI that holds up
+                in production. We build the digital infrastructure that businesses, governments, and
+                citizens rely on every day.
               </p>
             </div>
           </Reveal>
@@ -60,9 +60,9 @@ export function VisionValues() {
             <div className="card-elevated card-elevated-hover h-full rounded-md border border-border bg-white p-10">
               <div className="font-mono-brand text-blue">Mission</div>
               <p className="mt-6 text-2xl font-semibold leading-snug text-ink">
-                We design, build, and operate high-integrity technology systems that solve real
-                problems — combining engineering rigour, deep local context, and modern AI to deliver
-                work that runs in production, not just in pitch decks.
+                We design, build, and operate technology systems that solve real problems. We combine
+                engineering rigour, local context, and modern AI to deliver work that runs in
+                production, not just in pitch decks.
               </p>
             </div>
           </Reveal>

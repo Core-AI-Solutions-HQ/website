@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "Core AI Solutions — Technology that works. Intelligence that delivers.";
+export const alt = "Core AI Solutions: Technology that works. Intelligence that delivers.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -34,8 +34,7 @@ export default async function OpenGraphImage() {
             Intelligence that delivers.
           </div>
           <div style={{ marginTop: 28, fontSize: 24, color: "rgba(255,255,255,0.78)", maxWidth: 900 }}>
-            Lagos-based engineering house building production-grade software, AI, and payment
-            infrastructure for Africa.
+            Engineering house in Lagos building software, AI, and payment infrastructure for Africa.
           </div>
         </div>
       </div>

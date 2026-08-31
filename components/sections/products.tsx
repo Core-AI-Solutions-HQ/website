@@ -30,14 +30,14 @@ export function Products() {
         </Reveal>
         <Reveal delay={80}>
           <h2 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.25rem]">
-            We build our own infrastructure — and it runs in production.
+            We build our own infrastructure, and it runs in production.
           </h2>
         </Reveal>
         <Reveal delay={140}>
           <figure className="relative mt-10 overflow-hidden rounded-lg border border-white/10">
             <InfrastructureIllustration />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/90 to-transparent px-6 py-5 pt-12 text-sm text-white/80">
-              In the field — SkillBase and TaxBridge connected to real backend rails, not prototypes.
+              In the field: SkillBase and TaxBridge connected to real backend rails, not prototypes.
             </figcaption>
           </figure>
         </Reveal>
@@ -56,10 +56,9 @@ export function Products() {
                   Status: Active Development
                 </div>
                 <p className="mt-6 text-base leading-relaxed text-ink/80">
-                  A trust-first, decentralised service marketplace connecting skilled artisans with
-                  clients across Nigeria. Combines biometric KYC, AI-facilitated communication, and an
-                  escrow-backed payment engine. Runs on iOS, Android, and web with a vendor interface
-                  and admin console.
+                  A decentralised service marketplace connecting skilled artisans with clients across
+                  Nigeria. It combines biometric KYC, AI in the conversation, and an escrow payment
+                  engine. It runs on iOS, Android, and web, with a vendor interface and admin console.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {skillbaseTags.map((tag) => (
@@ -94,10 +93,10 @@ export function Products() {
                   Status: Government Engagement Phase
                 </div>
                 <p className="mt-6 text-base leading-relaxed text-ink/80">
-                  Programmatic tax remittance infrastructure for Nigeria&apos;s digital and gig economy
-                  — lets any registered organisation remit taxes on behalf of workers directly to the
-                  Nigeria Revenue Service in real time, with full TIN attribution. API-first and
-                  batch-capable — the industrial rail that manual transfers can&apos;t be.
+                  Programmatic tax remittance infrastructure for Nigeria&apos;s digital and gig economy.
+                  Any registered organisation can remit taxes on behalf of workers directly to the
+                  Nigeria Revenue Service in real time, with full TIN attribution. It works via API
+                  and in bulk: the industrial rail that manual transfers cannot be.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {taxbridgeTags.map((tag) => (

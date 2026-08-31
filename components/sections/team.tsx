@@ -12,11 +12,11 @@ const roles = [
   },
   {
     title: "Frontend Engineer",
-    body: "Ships the interfaces — from admin consoles to consumer apps.",
+    body: "Ships the interfaces, from admin consoles to consumer apps.",
   },
   {
     title: "AI & Data Specialist",
-    body: "Builds LLM features, data pipelines, and model-in-the-loop workflows.",
+    body: "Builds LLM features, data pipelines, and workflows that put a model in the loop.",
   },
   {
     title: "Product Designer",
@@ -33,12 +33,12 @@ export function Team() {
         </Reveal>
         <Reveal delay={80}>
           <h2 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-            A lean, senior-heavy team.
+            A small senior team.
           </h2>
         </Reveal>
         <Reveal delay={160}>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-brand">
-            We prioritise depth over breadth — every team member operates at production level.
+            We prioritise depth over breadth. Every team member operates at production level.
           </p>
         </Reveal>
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -57,7 +57,7 @@ export function Team() {
             <div className="font-mono-brand text-blue">For investors & partners</div>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink/85">
               Extended team bios and LinkedIn profiles are available on request. We keep them off the
-              public site by preference — reach out and we&apos;ll share them directly.
+              public site by preference, so reach out and we&apos;ll share them directly.
             </p>
           </div>
           <a

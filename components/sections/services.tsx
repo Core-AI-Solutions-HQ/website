@@ -21,14 +21,14 @@ const services: {
 }[] = [
   {
     title: "Mobile App Development",
-    description: "Native and cross-platform apps engineered for production, not proof-of-concept.",
+    description: "Native and cross-platform apps engineered for production, not demos.",
     icon: Smartphone,
     bullets: [
-      "iOS & Android — Swift, Kotlin",
+      "iOS and Android in Swift and Kotlin",
       "React Native and Flutter",
       "UI/UX design and prototyping",
       "App Store & Play Store deployment",
-      "Marketplaces, fintech, wallets, logistics, on-demand platforms",
+      "Marketplaces, fintech, wallets, logistics, and on demand platforms",
     ],
   },
   {
@@ -45,11 +45,11 @@ const services: {
   },
   {
     title: "AI & Machine Learning",
-    description: "AI features that run in the workflow — evaluated, monitored, and defensible.",
+    description: "AI features that run in the workflow, evaluated, monitored, and defensible.",
     icon: BrainCircuit,
     bullets: [
       "LLM applications with evaluation and guardrails",
-      "RAG, agents, and model-in-the-loop systems",
+      "RAG, agents, and systems where a model sits in the workflow",
       "OpenAI, Anthropic, Gemini, LangChain",
       "Speech, document intelligence, and vector search",
       "Data pipelines and production monitoring",
@@ -75,13 +75,13 @@ const services: {
       "Tax remittance and TIN-attributed flows",
       "NDPA, CBN, and Nigeria Tax Act 2025 alignment",
       "Immutable audit vaults and operator consoles",
-      "API-first integrations with government rails",
-      "Procurement-ready documentation and sandboxes",
+      "API integrations with government rails",
+      "Documentation and sandboxes ready for procurement",
     ],
   },
   {
     title: "Business Technology Consulting",
-    description: "Senior technical leadership without the full-time hire.",
+    description: "Senior technical leadership without a full time hire.",
     icon: Compass,
     bullets: [
       "Discovery, architecture, and delivery operating models",
@@ -106,7 +106,7 @@ export function Services() {
         </Reveal>
         <Reveal delay={80}>
           <h2 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-            End-to-end technology, one team.
+            From mobile to payments, one team.
           </h2>
         </Reveal>
         <div className="mt-16 grid gap-8 md:grid-cols-[minmax(0,280px)_1fr]">

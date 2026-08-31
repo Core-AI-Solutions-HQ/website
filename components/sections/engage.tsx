@@ -3,8 +3,8 @@ import { Reveal } from "@/components/site/reveal";
 const models = [
   {
     n: "01",
-    title: "Project-Based",
-    body: "Fixed-scope builds with a defined deliverable and timeline.",
+    title: "Project based",
+    body: "Fixed scope builds with a defined deliverable and timeline.",
   },
   {
     n: "02",
@@ -14,12 +14,12 @@ const models = [
   {
     n: "03",
     title: "Managed Service",
-    body: "We build, run, and operate the platform end-to-end.",
+    body: "We build, run, and operate the whole platform.",
   },
   {
     n: "04",
     title: "CTO-as-a-Service",
-    body: "Senior technical leadership without the full-time hire.",
+    body: "Senior technical leadership without a full time hire.",
   },
   {
     n: "05",

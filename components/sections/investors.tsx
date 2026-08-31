@@ -6,7 +6,7 @@ const stats = [
   { value: "2", label: "Live product lines in active development", icon: LineChart },
   { value: "3+", label: "Sectors served: fintech, govtech, logistics", icon: Building2 },
   { value: "NRS", label: "Government engagement in progress", icon: Handshake },
-  { value: "Africa", label: "Infrastructure focus — Nigeria first, continent next", icon: TrendingUp },
+  { value: "Africa", label: "Infrastructure focus: Nigeria first, continent next", icon: TrendingUp },
 ] as const;
 
 export function Investors() {
@@ -35,9 +35,9 @@ export function Investors() {
             <Reveal delay={160}>
               <p className="mt-8 max-w-xl text-lg leading-relaxed text-slate-brand">
                 Nigeria&apos;s digital and gig economy is growing fast, but the infrastructure
-                underneath it — payments, identity, tax compliance — is still fragmented. Core AI
-                Solutions builds the rails other platforms rely on: production-grade software that
-                runs in the background of the businesses shaping the market.
+                underneath it (payments, identity, tax compliance) is still fragmented. Core AI
+                Solutions builds the rails other platforms rely on: software that runs in the
+                background of the businesses shaping the market.
               </p>
             </Reveal>
             <Reveal delay={240}>

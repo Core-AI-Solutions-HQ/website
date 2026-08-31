@@ -19,19 +19,19 @@ export function About() {
           <div>
             <Reveal delay={80}>
               <h2 className="text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
-                Bridging cutting-edge technology and real-world problems.
+                Serious technology against problems that actually matter.
               </h2>
             </Reveal>
             <Reveal delay={160}>
               <div className="mt-8 space-y-5 text-lg leading-relaxed text-slate-brand">
                 <p>
-                  Core AI Solutions is a Lagos-based technology company. We bring together engineers,
+                  Core AI Solutions is a technology company in Lagos. We bring together engineers,
                   designers, and AI specialists who have shipped production systems for fintech, labour
                   markets, government, logistics, retail, and professional services.
                 </p>
                 <p>
                   We don&apos;t build demos. We build the infrastructure that runs the business the day
-                  after launch — the payment engine that doesn&apos;t double-charge, the KYC flow that
+                  after launch: the payment engine that doesn&apos;t double-charge, the KYC flow that
                   clears fraud, the remittance rail that reconciles to the kobo.
                 </p>
               </div>

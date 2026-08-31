@@ -2,7 +2,7 @@ import { ContactForm } from "@/components/sections/contact-form";
 import { ContactNetwork } from "@/components/site/illustrations";
 import { siteConfig } from "@/lib/site";
 
-const ways = ["Project-Based", "Retainer", "Managed Service", "CTO-as-a-Service", "Consultation"];
+const ways = ["Project based", "Retainer", "Managed Service", "CTO-as-a-Service", "Consultation"];
 
 export function Contact() {
   return (
@@ -24,7 +24,7 @@ export function Contact() {
               Let&apos;s build something that works.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
-              Whether you need a custom build, an AI integration, or want to discuss a partnership —
+              Whether you need a custom build, an AI integration, or want to discuss a partnership,
               we want to hear from you.
             </p>
             <div className="mt-10">

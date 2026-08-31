@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Lagos software engineering",
     "African fintech infrastructure",
     "GovTech Nigeria",
-    "production-grade AI",
+    "AI systems Nigeria",
     "SkillBase",
     "TaxBridge",
     "payment infrastructure",

@@ -4,38 +4,38 @@ import { Reveal } from "@/components/site/reveal";
 const reasons = [
   {
     n: "01",
-    title: "Ship Production Code",
-    body: "Not prototypes. Code that runs the business on day one.",
+    title: "Ship production code",
+    body: "Code that runs the business on day one, not a prototype.",
     icon: Rocket,
   },
   {
     n: "02",
-    title: "Nigerian Context",
+    title: "Nigerian context",
     body: "Built for local rails: NIN, BVN, CBN, NDPA, PSPs.",
     icon: MapPin,
   },
   {
     n: "03",
-    title: "AI-Native",
-    body: "AI is a first-class primitive, not a bolt-on feature.",
+    title: "AI in the product",
+    body: "AI is part of the system, not something we add later.",
     icon: BrainCircuit,
   },
   {
     n: "04",
-    title: "Full-Stack Ownership",
+    title: "One stack, one team",
     body: "One team from schema to store listing.",
     icon: Layers,
   },
   {
     n: "05",
-    title: "Security-First",
+    title: "Security from day one",
     body: "Auditable by design, defensible under review.",
     icon: ShieldCheck,
   },
   {
     n: "06",
-    title: "Scalability by Design",
-    body: "Idempotent, observable, and horizontally scalable.",
+    title: "Built to scale",
+    body: "Idempotent, observable, and ready to grow.",
     icon: Maximize2,
   },
 ] as const;
