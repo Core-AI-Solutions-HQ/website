@@ -49,7 +49,7 @@ export function VisionValues() {
           <Reveal>
             <div className="card-elevated card-elevated-hover h-full rounded-md border border-border bg-white p-10">
               <div className="font-mono-brand text-blue">Vision</div>
-              <p className="mt-6 text-2xl font-semibold leading-snug text-ink">
+              <p className="font-heading mt-6 text-2xl font-semibold leading-snug text-ink">
                 To be Africa&apos;s most trusted engineering house for software and AI that holds up
                 in production. We build the digital infrastructure that businesses, governments, and
                 citizens rely on every day.
@@ -59,7 +59,7 @@ export function VisionValues() {
           <Reveal delay={100}>
             <div className="card-elevated card-elevated-hover h-full rounded-md border border-border bg-white p-10">
               <div className="font-mono-brand text-blue">Mission</div>
-              <p className="mt-6 text-2xl font-semibold leading-snug text-ink">
+              <p className="font-heading mt-6 text-2xl font-semibold leading-snug text-ink">
                 We design, build, and operate technology systems that solve real problems. We combine
                 engineering rigour, local context, and modern AI to deliver work that runs in
                 production, not just in pitch decks.

@@ -23,7 +23,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
-  --font-heading: var(--font-bricolage), var(--font-geist), sans-serif;
+  --font-heading: var(--font-parkinsans), var(--font-geist), sans-serif;
   --font-mono:
     "Cascadia Mono", "SFMono-Regular", "IBM Plex Mono", ui-monospace, Menlo,
     Consolas, monospace;
@@ -46,7 +46,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.font-heading {
   font-family: var(--font-heading);
 }
 

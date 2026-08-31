@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     "Engineering house in Lagos building software, AI, and payment infrastructure for businesses, governments, and citizens across Africa.",
   url: "https://coreaisolutions.tech",
-  email: "coreaisolutionshq@gmail.com",
+  email: "info@coreaisolutions.tech",
   phone: "+234 906 341 1093",
   phoneHref: "+2349063411093",
   location: "Lagos, Nigeria",
@@ -32,11 +32,19 @@ export const inquiryTypes = [
   "Other",
 ] as const;
 
-export const investorMailto =
-  "mailto:coreaisolutionshq@gmail.com?subject=Investor%20Enquiry%3A%20Core%20AI%20Solutions&body=Hi%20Core%20AI%20Solutions%20team%2C%0A%0AI%27d%20like%20to%20request%20your%20investor%20deck%20and%20learn%20more%20about%20the%20opportunity.%0A%0A";
+function mailtoLink(subject: string, body?: string) {
+  const query = `subject=${encodeURIComponent(subject)}${
+    body ? `&body=${encodeURIComponent(body)}` : ""
+  }`;
+  return `mailto:${siteConfig.email}?${query}`;
+}
 
-export const teamBiosMailto =
-  "mailto:coreaisolutionshq@gmail.com?subject=Team%20bios%20request";
+export const investorMailto = mailtoLink(
+  "Investor enquiry: Core AI Solutions",
+  "Hi Core AI Solutions team,\n\nI'd like to request your investor deck and learn more about the opportunity.\n\n",
+);
+
+export const teamBiosMailto = mailtoLink("Team bios request");
 
 export const stack = [
   { category: "Mobile", items: ["Swift", "Kotlin", "React Native", "Flutter"] },

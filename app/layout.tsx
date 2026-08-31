@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, Geist } from "next/font/google";
+import { Geist, Parkinsans } from "next/font/google";
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -10,9 +10,9 @@ const geist = Geist({
   display: "swap",
 });
 
-const bricolage = Bricolage_Grotesque({
+const parkinsans = Parkinsans({
   subsets: ["latin"],
-  variable: "--font-bricolage",
+  variable: "--font-parkinsans",
   display: "swap",
 });
 
@@ -82,7 +82,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geist.variable} ${bricolage.variable} h-full antialiased`}>
+    <html lang="en" className={`${geist.variable} ${parkinsans.variable} h-full antialiased`}>
       <body className="min-h-full bg-paper font-sans text-ink">
         <JsonLd />
         {children}
