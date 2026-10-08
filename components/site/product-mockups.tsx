@@ -37,9 +37,9 @@ export function TrustOraMockup() {
         <circle cx="98" cy="210" r="10" fill="#1A4FA0" fillOpacity="0.3" stroke="#1A4FA0" strokeWidth="1" />
         <rect x="116" y="202" width="60" height="6" rx="2" fill="#FFFFFF" fillOpacity="0.85" />
         <rect x="116" y="214" width="88" height="4" rx="2" fill="#5B6B85" />
-        <rect x="116" y="226" width="36" height="10" rx="3" fill="#1A4FA0" fillOpacity="0.25" stroke="#1A4FA0" strokeOpacity="0.5" />
+        <rect x="116" y="226" width="52" height="10" rx="3" fill="#1A4FA0" fillOpacity="0.25" stroke="#1A4FA0" strokeOpacity="0.5" />
         <text x="120" y="233" fill="#8BA8E0" fontFamily="ui-monospace, monospace" fontSize="5">
-          ESCROW
+          ORA WALLET
         </text>
       </g>
       <g>
@@ -49,7 +49,7 @@ export function TrustOraMockup() {
         <rect x="116" y="284" width="82" height="4" rx="2" fill="#5B6B85" />
         <rect x="116" y="296" width="52" height="10" rx="3" fill="#0ABFBC" fillOpacity="0.15" stroke="#0ABFBC" strokeOpacity="0.4" />
         <text x="120" y="303" fill="#0ABFBC" fontFamily="ui-monospace, monospace" fontSize="5">
-          NGN WALLET
+          NGN PAYOUT
         </text>
       </g>
       <rect x="80" y="332" width="160" height="24" rx="12" fill="#111F38" stroke="#1A2740" />

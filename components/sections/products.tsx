@@ -5,9 +5,9 @@ import { products } from "@/lib/site";
 
 const trustoraTags = [
   "Artisan KYC",
-  "Escrow-protected jobs",
+  "ORA Wallet escrow",
   "In-app chat",
-  "Wallet payouts in NGN",
+  "NGN payouts",
   "Job posting and bidding",
   "Ratings and disputes",
   "Built for local work",
@@ -58,8 +58,8 @@ export function Products() {
                 </div>
                 <p className="mt-6 text-base leading-relaxed text-ink/80">
                   Hire skilled artisans. Get paid with trust. TrustORA connects clients and verified
-                  artisans across Nigeria, with escrow-protected jobs, in-app chat, and wallet
-                  payouts that settle in NGN.
+                  artisans across Nigeria, with ORA Wallet escrow, in-app chat, and payouts that
+                  settle in NGN.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {trustoraTags.map((tag) => (

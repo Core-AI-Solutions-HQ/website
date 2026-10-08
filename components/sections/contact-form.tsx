@@ -52,10 +52,20 @@ export function ContactForm() {
   const busy = status === "submitting";
 
   return (
-    <form className="space-y-5" noValidate={false} onSubmit={onSubmit}>
-      <div className="sr-only" aria-hidden>
+    <form className="relative space-y-5" noValidate={false} onSubmit={onSubmit}>
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: "-10000px",
+          top: "auto",
+          width: 1,
+          height: 1,
+          overflow: "hidden",
+        }}
+      >
         <label>
-          Website
+          Company website
           <input name="website" type="text" tabIndex={-1} autoComplete="off" />
         </label>
       </div>

@@ -36,11 +36,15 @@ export function parseContactPayload(input: unknown): ContactPayload | { error: s
   return { name, email, company, phone, intent, message, website };
 }
 
+export function isSmtpConfigured() {
+  return Boolean(process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS);
+}
+
 export function createTransport() {
   const host = process.env.SMTP_HOST;
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
-  const port = Number(process.env.SMTP_PORT ?? 465);
+  const port = Number(process.env.SMTP_PORT ?? 587);
 
   if (!host || !user || !pass) {
     throw new Error("SMTP is not configured.");
@@ -50,10 +54,12 @@ export function createTransport() {
     host,
     port,
     secure: port === 465,
+    requireTLS: port === 587,
     auth: { user, pass },
-    connectionTimeout: 15_000,
-    greetingTimeout: 10_000,
-    socketTimeout: 20_000,
+    connectionTimeout: 20_000,
+    greetingTimeout: 15_000,
+    socketTimeout: 25_000,
+    tls: { minVersion: "TLSv1.2" },
   });
 }
 

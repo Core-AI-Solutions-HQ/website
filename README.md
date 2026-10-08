@@ -27,6 +27,6 @@ npm start
 
 ## Contact email
 
-The site sends enquiries to `info@coreaisolutions.tech` over Hostinger SMTP (port 465, SSL). Copy `.env.example` to `.env.local` for development, and set the same values in Vercel for production.
+The site sends enquiries to `info@coreaisolutions.tech` over Hostinger SMTP (port 587, STARTTLS). Copy `.env.example` to `.env.local` for development, and set the same values in Vercel for production, then redeploy.
 
-Create the mailbox in Hostinger Email first, then use that password as `SMTP_PASS`. The domain already has MX, SPF, DKIM, DMARC, autodiscover, and autoconfig pointed at Hostinger.
+Create the mailbox in Hostinger Email first, then use that password as `SMTP_PASS`. Without those Vercel env vars the contact form returns 503. The domain already has MX, SPF, DKIM, DMARC, autodiscover, and autoconfig pointed at Hostinger.

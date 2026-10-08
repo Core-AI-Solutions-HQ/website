@@ -46,7 +46,7 @@ export function JsonLd() {
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web",
         description:
-          "Hire verified artisans in Nigeria with escrow-protected jobs, in-app chat, and wallet payouts in NGN.",
+          "Hire verified artisans in Nigeria with ORA Wallet escrow, in-app chat, and payouts in NGN.",
         offers: {
           "@type": "Offer",
           price: "0",

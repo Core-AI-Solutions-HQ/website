@@ -3,6 +3,7 @@ import {
   contactFromAddress,
   contactToAddress,
   createTransport,
+  isSmtpConfigured,
   parseContactPayload,
 } from "@/lib/mail";
 
@@ -13,18 +14,6 @@ const WINDOW_MS = 15 * 60 * 1000;
 const MAX_HITS = 5;
 
 export async function POST(request: NextRequest) {
-  const ip =
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    request.headers.get("x-real-ip") ||
-    "unknown";
-
-  if (!allow(ip)) {
-    return NextResponse.json(
-      { error: "Too many enquiries from this network. Try again later." },
-      { status: 429 },
-    );
-  }
-
   let body: unknown;
   try {
     body = await request.json();
@@ -39,6 +28,23 @@ export async function POST(request: NextRequest) {
 
   if (parsed.website) {
     return NextResponse.json({ ok: true });
+  }
+
+  if (!isSmtpConfigured()) {
+    console.error("Contact mail failed: SMTP_HOST, SMTP_USER, or SMTP_PASS is missing.");
+    return NextResponse.json({ error: "Could not send the enquiry." }, { status: 503 });
+  }
+
+  const ip =
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    request.headers.get("x-real-ip") ||
+    "unknown";
+
+  if (!allow(ip)) {
+    return NextResponse.json(
+      { error: "Too many enquiries from this network. Try again later." },
+      { status: 429 },
+    );
   }
 
   const details = [
@@ -61,12 +67,7 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("Contact mail failed", error);
-    return NextResponse.json(
-      {
-        error: "Could not send the enquiry.",
-      },
-      { status: 503 },
-    );
+    return NextResponse.json({ error: "Could not send the enquiry." }, { status: 503 });
   }
 
   return NextResponse.json({ ok: true });
