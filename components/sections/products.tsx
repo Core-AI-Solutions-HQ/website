@@ -1,15 +1,16 @@
 import { Reveal } from "@/components/site/reveal";
 import { InfrastructureIllustration } from "@/components/site/illustrations";
-import { SkillBaseMockup, TaxBridgeMockup } from "@/components/site/product-mockups";
+import { TaxBridgeMockup, TrustOraMockup } from "@/components/site/product-mockups";
+import { products } from "@/lib/site";
 
-const skillbaseTags = [
-  "Biometric & tiered KYC",
-  "Job auction + direct booking",
-  "Escrow with milestone release",
-  "AI contact-leakage filter",
-  "Three-way trust scoring",
-  "Vendor marketplace with QR fulfilment",
-  "Real-time chat & geofenced discovery",
+const trustoraTags = [
+  "Artisan KYC",
+  "Escrow-protected jobs",
+  "In-app chat",
+  "Wallet payouts in NGN",
+  "Job posting and bidding",
+  "Ratings and disputes",
+  "Built for local work",
 ];
 
 const taxbridgeTags = [
@@ -37,7 +38,7 @@ export function Products() {
           <figure className="relative mt-10 overflow-hidden rounded-lg border border-white/10">
             <InfrastructureIllustration />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/90 to-transparent px-6 py-5 pt-12 text-sm text-white/80">
-              In the field: SkillBase and TaxBridge connected to real backend rails, not prototypes.
+              In the field: TrustORA and TaxBridge connected to real backend rails, not prototypes.
             </figcaption>
           </figure>
         </Reveal>
@@ -46,22 +47,22 @@ export function Products() {
             <article className="card-elevated card-elevated-hover group relative h-full overflow-hidden rounded-lg border border-border bg-white">
               <div className="border-b border-border bg-paper p-6">
                 <div className="mx-auto flex h-64 w-full max-w-[280px] items-center justify-center">
-                  <SkillBaseMockup />
+                  <TrustOraMockup />
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-3xl font-bold text-ink">SkillBase</h3>
+                <h3 className="text-3xl font-bold text-ink">{products.trustora.name}</h3>
                 <div className="font-mono-brand mt-2 flex items-center gap-2 text-slate-brand">
                   <span className="h-1.5 w-1.5 rounded-full bg-teal" />
-                  Status: Active Development
+                  Status: Live
                 </div>
                 <p className="mt-6 text-base leading-relaxed text-ink/80">
-                  A decentralised service marketplace connecting skilled artisans with clients across
-                  Nigeria. It combines biometric KYC, AI in the conversation, and an escrow payment
-                  engine. It runs on iOS, Android, and web, with a vendor interface and admin console.
+                  Hire skilled artisans. Get paid with trust. TrustORA connects clients and verified
+                  artisans across Nigeria, with escrow-protected jobs, in-app chat, and wallet
+                  payouts that settle in NGN.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
-                  {skillbaseTags.map((tag) => (
+                  {trustoraTags.map((tag) => (
                     <span
                       key={tag}
                       className="font-mono-brand rounded border border-border bg-paper px-2.5 py-1 text-slate-brand"
@@ -70,6 +71,14 @@ export function Products() {
                     </span>
                   ))}
                 </div>
+                <a
+                  href={products.trustora.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-8 inline-flex items-center rounded-md bg-blue px-5 py-2.5 text-sm font-medium text-white transition-colors hover:brightness-110"
+                >
+                  Visit trustora.ng
+                </a>
               </div>
             </article>
           </Reveal>

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "African fintech infrastructure",
     "GovTech Nigeria",
     "AI systems Nigeria",
-    "SkillBase",
+    "TrustORA",
     "TaxBridge",
     "payment infrastructure",
     "mobile app development Nigeria",

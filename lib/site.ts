@@ -14,6 +14,13 @@ export const siteConfig = {
   locale: "en_NG",
 } as const;
 
+export const products = {
+  trustora: {
+    name: "TrustORA",
+    url: "https://trustora.ng",
+  },
+} as const;
+
 export const navItems = [
   { href: "#services", label: "Services" },
   { href: "#products", label: "Products" },

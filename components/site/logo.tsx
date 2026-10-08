@@ -9,8 +9,8 @@ export function Logo({ className = "" }: LogoProps) {
     <Image
       src="/logo.png"
       alt="Core AI Solutions Ltd"
-      width={720}
-      height={240}
+      width={662}
+      height={192}
       priority
       className={`h-12 w-auto object-contain object-left sm:h-14 lg:h-16 ${className}`}
     />

@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/site";
+import { products, siteConfig } from "@/lib/site";
 
 export function JsonLd() {
   const graph = {
@@ -27,6 +27,7 @@ export function JsonLd() {
           "Artificial intelligence",
           "Fintech infrastructure",
           "Government technology",
+          "TrustORA",
         ],
       },
       {
@@ -37,6 +38,21 @@ export function JsonLd() {
         description: siteConfig.description,
         publisher: { "@id": `${siteConfig.url}/#organization` },
         inLanguage: "en",
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: products.trustora.name,
+        url: products.trustora.url,
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "Hire verified artisans in Nigeria with escrow-protected jobs, in-app chat, and wallet payouts in NGN.",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "NGN",
+        },
+        provider: { "@id": `${siteConfig.url}/#organization` },
       },
     ],
   };

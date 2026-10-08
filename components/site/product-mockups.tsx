@@ -1,6 +1,6 @@
-export function SkillBaseMockup() {
+export function TrustOraMockup() {
   return (
-    <svg viewBox="0 0 320 380" role="img" aria-label="SkillBase mobile app mockup" className="h-full w-full">
+    <svg viewBox="0 0 320 380" role="img" aria-label="TrustORA mobile app mockup" className="h-full w-full">
       <defs>
         <linearGradient id="sb-bg" x1="0" x2="0" y1="0" y2="1">
           <stop offset="0%" stopColor="#0F1E38" />
@@ -15,7 +15,7 @@ export function SkillBaseMockup() {
       <rect x="66" y="16" width="188" height="348" rx="22" fill="#0A1628" />
       <rect x="140" y="22" width="40" height="6" rx="3" fill="#1A2740" />
       <text x="80" y="58" fill="#0ABFBC" fontFamily="ui-monospace, monospace" fontSize="7" letterSpacing="1.2">
-        SKILLBASE
+        TRUSTORA
       </text>
       <text x="80" y="78" fill="#FFFFFF" fontFamily="sans-serif" fontSize="13" fontWeight="600">
         Nearby artisans
@@ -47,9 +47,9 @@ export function SkillBaseMockup() {
         <circle cx="98" cy="280" r="10" fill="#0ABFBC" fillOpacity="0.2" />
         <rect x="116" y="272" width="75" height="6" rx="2" fill="#FFFFFF" fillOpacity="0.85" />
         <rect x="116" y="284" width="82" height="4" rx="2" fill="#5B6B85" />
-        <rect x="116" y="296" width="30" height="10" rx="3" fill="#0ABFBC" fillOpacity="0.15" stroke="#0ABFBC" strokeOpacity="0.4" />
+        <rect x="116" y="296" width="52" height="10" rx="3" fill="#0ABFBC" fillOpacity="0.15" stroke="#0ABFBC" strokeOpacity="0.4" />
         <text x="120" y="303" fill="#0ABFBC" fontFamily="ui-monospace, monospace" fontSize="5">
-          AVAILABLE
+          NGN WALLET
         </text>
       </g>
       <rect x="80" y="332" width="160" height="24" rx="12" fill="#111F38" stroke="#1A2740" />
